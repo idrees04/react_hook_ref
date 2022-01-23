@@ -37,3 +37,14 @@ class ErrorBoundary extends React.Component {
     }  
   }
   export default ErrorBoundary;
+
+
+
+//   Note
+// Error boundaries are React components which catch JavaScript errors anywhere in our app, log those errors, and display a fallback UI. It does not break the whole app component tree and only renders the fallback UI whenever an error occurred in a component.
+
+// Error boundaries do not catch errors for:
+// Event handlers (Error boundaries do not catch errors inside event handlers.)If you need to catch an error inside an event handler, use the regular JavaScript try / catch statement:
+// Asynchronous code (e.g. setTimeout or requestAnimationFrame callbacks)
+// Server side rendering
+// Errors thrown in the error boundary itself (rather than its children)

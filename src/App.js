@@ -4,6 +4,7 @@ import Home from "./Home"
 import UesRefHook from "../src/RefHooks/RefHooks"
 import ReducerHook from "../src/ReducerHooks/ReducerHooks"
 import HookLife from "../src/HookLifeCycle/HookLifeCycleUseEffect"
+// import ErrorBoundaryPage from './ErrorBoundary';
 
 // import { render } from "react-dom";
 import {
@@ -23,6 +24,7 @@ function App() {
               <Route path="UesRefHookLink" element={<UesRefHook />} />
               <Route path="ReducerHookLink" element={<ReducerHook initialCount= {5} />} /> 
               <Route path="HookLifeCycleUseEffectLink" element={<HookLife />} /> 
+              {/* <Route path="ErrorBoundaryPageLink" element={<ErrorBoundaryPage />} />  */}
             </Routes>
           </BrowserRouter>
       </header>

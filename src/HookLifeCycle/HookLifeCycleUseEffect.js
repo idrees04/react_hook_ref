@@ -4,7 +4,8 @@ import ErrorCatchHookLife from "../ErrorBoundary"
 
 function HookLifeCycleUseEffect() {
      const [count, setCount] = useState(0);
-  
+     const [EventError, setEventError] = useState(null);
+
     useEffect(() => {
       console.log('useEffect 1 '+ count);
   
@@ -19,6 +20,7 @@ function HookLifeCycleUseEffect() {
     
     console.log('render')
     const handle = (e) => { 
+      try {
       switch (e){
         case "+":
           setCount(count+1)
@@ -26,8 +28,13 @@ function HookLifeCycleUseEffect() {
           case "-":
             setCount(count-1)
             break;
+            default:
+              setCount(0)
+             break;
       }
-   
+    } catch (error) {
+      setEventError({ error });
+    }
       };
   return (
     <>
@@ -42,6 +49,14 @@ function HookLifeCycleUseEffect() {
         <br/>
          <button onClick={()=>handle("-")}>Decrement</button> 
         <br/>
+        <button onClick={()=>setCount(0)}>Reset</button> 
+        <br/>
+        <p>
+      {  EventError==null?
+        EventError :
+        ""
+        }
+        </p>
          </ErrorCatchHookLife>  
         </>
   );

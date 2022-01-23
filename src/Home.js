@@ -38,6 +38,11 @@ function Home() {
             <Link to="/HookLifeCycleUseEffectLink"> component LifeCycle using UseEffect</Link>
             </ErrorCatchHome>
             </li>
+            {/* <li>
+            <ErrorCatchHome>
+            <Link to="/ErrorBoundaryPageLink">Open ErrorBoundary Page</Link>
+            </ErrorCatchHome>
+            </li> */}
           </ul>
         </nav>
   
