@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import ErrorCatchHome from "../src/ErrorBoundary"
+
 
 function Home() {
     return (
@@ -13,20 +15,28 @@ function Home() {
   
         <nav>
           <ul>
-            <li>
+            {/* <li>
               <Link to="/">Home</Link>
-            </li>
+            </li> */}
             <li>
+              <ErrorCatchHome>
               <Link to="/UesRefHookLink"> UesRef Hook </Link>
+              </ErrorCatchHome>
             </li>
             <li>
+            <ErrorCatchHome>
               {/* Use a normal <a> when linking to the "Inbox" app so the browser
                   does a full document reload, which is what we want when exiting
                   this app and entering another so we execute its entry point in
                   inbox/main.jsx. */}
             <Link to="/ReducerHookLink"> UesRef Hook </Link>
-
+            </ErrorCatchHome>
               {/* <a href="/ReducerHookLink">Inbox</a> */}
+            </li>
+            <li>
+            <ErrorCatchHome>
+            <Link to="/HookLifeCycleUseEffectLink"> component LifeCycle using UseEffect</Link>
+            </ErrorCatchHome>
             </li>
           </ul>
         </nav>

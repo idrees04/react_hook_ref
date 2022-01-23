@@ -3,6 +3,7 @@ import './App.css';
 import Home from "./Home"
 import UesRefHook from "../src/RefHooks/RefHooks"
 import ReducerHook from "../src/ReducerHooks/ReducerHooks"
+import HookLife from "../src/HookLifeCycle/HookLifeCycleUseEffect"
 
 // import { render } from "react-dom";
 import {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="UesRefHookLink" element={<UesRefHook />} />
               <Route path="ReducerHookLink" element={<ReducerHook initialCount= {5} />} /> 
+              <Route path="HookLifeCycleUseEffectLink" element={<HookLife />} /> 
             </Routes>
           </BrowserRouter>
       </header>
