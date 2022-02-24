@@ -46,7 +46,7 @@ function UseEffectHook() {
     <>
     <p>UseEffect Component LifeCycle Example</p>
     <br/>
-    <Link to="/">Home</Link> 
+    <Link to="ReactHook">Home</Link> 
     <br/>
       <label>
         <input
