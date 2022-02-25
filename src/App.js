@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from "./Home"
-import UesRefHook from "../src/RefHooks/RefHooks"
+import UseRefHook from "../src/RefHooks/RefHooks"
 import ReducerHook from "../src/ReducerHooks/ReducerHooks"
 import HookLife from "../src/HookLifeCycle/HookLifeCycleUseEffect"
 import HookExample from "../src/HookLifeCycle/UseEffectHookExample"
@@ -22,7 +22,7 @@ function App() {
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="UesRefHookLink" element={<UesRefHook />} />
+              <Route path="UseRefHookLink" element={<UseRefHook />} />
               <Route path="ReducerHookLink" element={<ReducerHook initialCount= {5} />} /> 
               <Route path="HookLifeCycleUseEffectLink" element={<HookLife />} /> 
               <Route path="HookExampleLifeCycleUseEffectLink" element={<HookExample />} /> 

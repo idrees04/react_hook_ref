@@ -20,7 +20,7 @@ function Home() {
             </li> */}
             <li>
               <ErrorCatchHome>
-              <Link to="/UesRefHookLink"> UesRef Hook </Link>
+              <Link to="/UseRefHookLink"> UseRef Hook </Link>
               </ErrorCatchHome>
             </li>
             <li>

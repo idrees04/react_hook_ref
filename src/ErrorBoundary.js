@@ -21,7 +21,7 @@ class ErrorBoundary extends React.Component {
         // Error path
         return (
           <div>
-             <Link to="ReactHook">Home</Link> 
+             <Link to="/">Home</Link> 
             <br/>
             <h2>Something went wrong.</h2>
             <details style={{ whiteSpace: 'pre-wrap' }}>

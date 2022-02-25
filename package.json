@@ -1,7 +1,7 @@
 {
   "name": "react_hook_ref",
   "version": "0.1.0",
-  "homepage": "https://idrees04.github.io/react_hook_ref/",
+  "homepage": "https://idrees04.github.io/UseRefHookLink",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
