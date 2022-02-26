@@ -4,12 +4,24 @@ import CreateUseRefExp from "./Create_Use_Ref_Exp"
 import { Link } from "react-router-dom";
 // import refreRender from "../src/RefHooks/RefRender"
 import RefReRender from "./RefRender"
-
+// switch(Link){
+//   case (to="/"):
+//   {
+//     console.log(to)
+//     break
+//   }
+//   case (to="/"):
+//     {
+//       console.log(to)
+//       break
+//     }
+// }
 function RefHooks() {
   return (
     <div className="App">
       <header className="App-header">
       <Link to="/">Home</Link>
+
       <h1>Ref Hooks</h1>
         <br/>
         <p>
@@ -32,5 +44,4 @@ function RefHooks() {
     </div>
   );
 }
-
 export default RefHooks;
